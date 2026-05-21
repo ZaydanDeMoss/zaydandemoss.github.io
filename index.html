@@ -2,23 +2,51 @@
 <html>
  <head>
   <title>Zaydan DeMoss</title>
+  <style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none; 
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      display: block;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
  </head>
  <body>
   <header>
    <nav>
    <a href="./index.html">Home</a>
     <div class="dropdown">
-    <!-- CHANGED HREF TO A HASHTAG -->
-    <a href="#" class="dropbtn">6th Grade ▾</a>
-    
-    <div class="dropdown-content">
-      <a href="./digitalfootprint.html">Digital Footprint</a>
-      <a href="./bioglyph.html">Bioglyph</a>
-      <a href="./aboutmeslides.hmtl">About me slides</a>
-      <a href="./stratchgame.hmtl">Stratcj Game</a>
-      <a href="./animaiton">Animations</a>
-    </div>
-   </nav>
+     <a href="#" class="dropbtn">6th Grade ▾</a>
+      <div class="dropdown-content">
+       <a href="./digitalfootprint.html">Digital Footprint</a>
+       <a href="./bioglyph.html">Bioglyph</a>
+       <a href="./aboutmeslides.hmtl">About me slides</a>
+       <a href="./stratchgame.hmtl">Stratcj Game</a>
+       <a href="./animaiton">Animations</a>
+      </div>
+     </nav>
    <h1>Zaydan C. DeMoss</h1>
    <p>"Once a band kid, always a band kid."</p>
   </header>
