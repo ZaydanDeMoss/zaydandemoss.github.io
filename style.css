@@ -48,3 +48,15 @@
     body{
         padding: 25px;
     }
+    .home-banner {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                    url("Untitled design (1).png");
+  
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
