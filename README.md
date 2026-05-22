@@ -1,0 +1,3 @@
+# Do not use 
+## Content in this is for my computer/tech class portfulio and that only
+If i catch you using this... i wont catch you im to slow...
