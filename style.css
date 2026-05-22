@@ -54,3 +54,17 @@
     body{
         padding: 25px;
     }
+    .banner {
+  /* Links your uploaded image as the background */
+      background-image: url("Untitled design.jpg");
+  
+  /* Crucial settings to make the image fit nicely */
+      background-size: cover;        /* Stretches image to fill the whole box */
+     background-position: center;   /* Centers the image perfectly */
+      background-repeat: no-repeat;  /* Prevents the image from tiling */
+  
+      color: #ffffff;                /* Keeps your text white */
+      text-align: center;
+      padding: 80px 20px;            /* Makes the banner taller to show off the image */
+      margin-bottom: 30px;
+    }
