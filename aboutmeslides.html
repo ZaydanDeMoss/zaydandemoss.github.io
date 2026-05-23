@@ -4,44 +4,23 @@
   <title>Zaydan DeMoss</title>
       <link rel="stylesheet" href="style.css">
       <style>
-        /* Reset margins and force the page to be exactly the height of the screen */
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column; /* Stacks header vertically on top of iframe */
-            background-color: #000;
-        }
+    .presentation-container {
+        width: 100%;
+        height: calc(100vh - 80px); /* 100% window height minus your header's height */
+        position: relative;
+        overflow: hidden;
+        background-color: #000;
+    }
 
-        /* Styling for your header */
-        header {
-            width: 100%;
-            background-color: #1a1a1a; /* Change color to match your design */
-            color: white;
-            padding: 15px; /* Adjust padding sizing as needed */
-            box-sizing: border-box;
-        }
-
-        /* Forces the container to grow and fill all remaining space */
-        .iframe-container {
-            flex-grow: 1;
-            width: 100%;
-            position: relative;
-        }
-
-        /* Stretches the iframe completely inside its container */
-        .iframe-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+    .presentation-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+</style>
   <!--<style>
     .dropdown {
       position: relative;
@@ -89,18 +68,14 @@
      </nav>
    <h1>About Me Slides</h1>
   </header>
-  <div class="iframe-container">
-        <iframe 
-            jsname="L5Fo6c" 
-            jscontroller="usmiIb" 
-            jsaction="rcuQ6b:WYd;" 
-            class="YMEQtf L6cTce-purZT L6cTce-pSzOP KfXz0b" 
-            sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals allow-storage-access-by-user-activation" 
-            frameborder="0" 
-            aria-label="Presentation, about me" 
-            allowfullscreen="true" 
-            src="https://google.com">
-        </iframe>
-    </div>
+  <div class="presentation-container">
+    <iframe 
+        sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals allow-storage-access-by-user-activation" 
+        frameborder="0" 
+        aria-label="Presentation, about me" 
+        allowfullscreen="true" 
+        src="https://google.com">
+    </iframe>
+</div>
  </body>
 </html>
