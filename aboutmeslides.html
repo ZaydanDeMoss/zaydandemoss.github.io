@@ -4,23 +4,40 @@
   <title>Zaydan DeMoss</title>
       <link rel="stylesheet" href="style.css">
       <style>
-    .presentation-container {
-        width: 100%;
-        height: calc(100vh - 80px); /* Adjust 80px to match your header height */
-        position: relative;
-        overflow: hidden;
-        background-color: #000;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .presentation-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
+    body {
+      overflow: hidden;
+      font-family: Arial, sans-serif;
     }
-</style>
+
+    header {
+      height: 70px;
+      background: #111;
+      color: white;
+
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+
+      font-size: 24px;
+    }
+
+    .slides-container {
+      width: 100vw;
+      height: calc(100vh - 70px);
+    }
+
+    .slides-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>>
   <!--<style>
     .dropdown {
       position: relative;
@@ -68,14 +85,13 @@
      </nav>
    <h1>About Me Slides</h1>
   </header>
-  <div class="presentation-container">
-    <iframe 
-        sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals allow-storage-access-by-user-activation" 
-        frameborder="0" 
-        aria-label="Presentation, about me" 
-        allowfullscreen="true" 
-        src="https://google.com">
+  <div class="slides-container">
+    <iframe
+      src="https://docs.google.com/presentation/d/e/2PACX-1vTvv5iEH8PjEnnU89uhTv_BXV0iReb6_bI13aFvFtD8txRKtNyKvKbrOfF4wTr2lYwQduFdnNt3uezD/pubembed?start=false&loop=false&delayms=999999999"
+      allowfullscreen="true"
+      mozallowfullscreen="true"
+      webkitallowfullscreen="true">
     </iframe>
-</div>
+  </div>
  </body>
 </html>
